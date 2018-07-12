@@ -1,0 +1,34 @@
+{
+  "name": "km_backend_management",
+  "version": "1.0.0",
+  "description": "KM Manangement Website",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "author": "Shenyi Cui",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "json-loader": "^0.5.7",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^2.0.13",
+    "aws-amplify": "^0.4.8",
+    "aws-amplify-react": "^0.1.54",
+    "jquery": "^3.3.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}

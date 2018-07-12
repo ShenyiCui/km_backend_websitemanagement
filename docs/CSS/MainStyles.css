@@ -1,0 +1,547 @@
+@font-face 
+{
+	font-family: 'DINWeb-Bold';
+	src: url('../Fonts/213925-ff-din-web-bold/DINWeb-Bold.woff') format('woff');
+}
+@font-face 
+{
+    font-family: 'DINWeb-Medium';
+    src: url('../Fonts/213927-ff-din-web-medium/DINWeb-Medium.woff') format('woff');
+}
+ @font-face 
+{
+    font-family: 'DINWeb-Light';
+    src: url("../Fonts/213926-ff-din-web-light/DINWeb-Light.woff") format('woff');
+  }
+body
+{
+	font-family: 'DINWeb-Bold', serif;
+}
+.LoginTriangle
+{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width:0;
+	height:0;
+	border-bottom: 300px solid #00325A;
+	border-right: 900px solid transparent;
+	z-index: 1;
+}
+.LoginTriangle h1
+{
+	font-family: 'DINWeb-Bold', serif;
+	font-size: 50px;
+	color: white;
+	position: relative;
+	top:140px;
+	left:20px;
+}
+.LoginTriangle p
+{
+	font-family: 'DINWeb-Medium', serif;
+	font-size: 25px;
+	color: white;
+	position: relative;
+	top:110px;
+	left: 250px;
+}
+
+.LoginColor
+{
+	background-color: rgba(134, 134, 134, 0.6);
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:auto;
+	z-index: 0;
+}
+
+.loginForm input
+{
+	width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.loginForm input:focus
+{
+	border: 3px solid #555;
+}
+
+
+#Logins
+{
+	position: absolute;
+	background-color: #dcdcce;
+	height: 215px;
+	width:400px;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -70%);
+	margin: 0;
+	z-index: 2;
+}
+#Logins2
+{
+	position: absolute;
+	background-color: #dcdcce;
+	height: 219px;
+	width:400px;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -70%);
+	margin: 0;
+	z-index: 1;
+}
+#Logins2 p
+{
+	font-family: 'DINWeb-Medium', serif;
+	font-size: 13px;
+}
+#loginButton
+{
+	background-color: #0078CA; 
+    border: none;
+    color: white;
+	width:100%;
+    padding: 30px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	cursor: pointer;
+	bottom: 0;
+}
+#loginButton:hover
+{
+	background-color: rgba(43,169,255,1.00);
+}
+#rememberMeTable
+{
+	position: absolute;
+	bottom: -10px;
+	left:25px;
+}
+#SignUpErrMsg
+{
+	font-size: 12px;
+	position: absolute;
+	color: red;
+	top:45px;
+	left:40px;
+}
+
+.moveUp
+{
+    -webkit-animation: LoginMvUp 0.7s normal ease-out;
+}
+.moveDown
+{
+	-webkit-animation: LoginMvDown 0.7s normal ease-out;
+}
+.hide
+{
+	display: none;
+}
+.show
+{
+	display:block;
+}
+
+@-webkit-keyframes LoginMvUp{
+ from{
+        top:50%;
+        -webkit-animation-timing-function: ease-in;
+
+   }
+   to {
+      top: 25%;
+      -webkit-animation-timing-function: ease-out;
+   }
+
+}
+
+@-webkit-keyframes LoginMvDown{
+ from{
+        top:25%;
+        -webkit-animation-timing-function: ease-in;
+
+   }
+   to {
+      top: 50%;
+      -webkit-animation-timing-function: ease-out;
+   }
+
+}
+
+
+#AdminCreatePage
+{
+	background-color: #00325a;
+	overflow-x: hidden;
+}
+.NewAdminForm input
+{
+	width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.NewAdminForm input:focus
+{
+	border: 3px solid #555;
+}
+#SignUpAdminErrMsg
+{
+	font-size: 12px;
+	position: absolute;
+	color: red;
+	top:120px;
+	left:60px;
+}
+#SignUpAdminErrMsg2
+{
+	font-size: 12px;
+	position: absolute;
+	color: red;
+	top:13px;
+	right:27.3%;
+}
+
+.NewAdminForm
+{
+	height: 550px;
+	width: 600px;
+	border-style: solid;
+    border-width: 5px;
+	position: absolute;
+	background-color: #dcdcce;
+
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	margin: 0;
+	z-index: 2;
+}
+
+#adminCreateButton
+{
+	background-color: #0078CA; 
+    border: none;
+    color: white;
+	width:80%;
+    padding: 30px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	cursor: pointer;
+	bottom: 0;
+}
+#adminCreateButton:hover
+{
+	background-color: rgba(43,169,255,1.00);
+}
+#ResendCode
+{
+	background-color: #f39100; 
+    border: none;
+    color: white;
+	width:80%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+#ResendCode:hover
+{
+	background-color: #FFA929;
+}
+
+.Logo
+{
+	position: absolute;
+	bottom:125px;
+	left:-5px;
+}
+.Logo h1
+{
+	font-family: 'DINWeb-Bold', serif;
+	font-size: 30px;
+	color: white;
+	position: relative;
+	top:140px;
+	left:20px;
+}
+.Logo p
+{
+	font-family: 'DINWeb-Medium', serif;
+	font-size: 15px;
+	color: white;
+	position: relative;
+	top:120px;
+	left: 158px;
+}
+
+.smallh1
+{
+	font-family: 'DINWeb-Medium', serif;
+	font-size: 16px;
+	margin-bottom:5px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top:0;
+    padding:0;
+}
+.UserUpdateSlides {display:none;}
+.back
+{
+	width: 5%;
+	position: absolute;
+	top:33px;
+	left: 22px;
+	cursor: pointer;
+}
+
+.tbl_user_data
+{
+	position: absolute;
+	background-color: #dcdcce;
+
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -20%);
+	margin: 0;
+	width: 90%;
+	height:400px;
+	border-style: solid;
+    border-width: 5px;
+	border-color: black;
+	overflow-y:auto;
+}
+.middle
+{
+	display:inline-block;
+	padding:6px 12px;
+	margin-bottom:0;
+}
+.editColor
+{
+	background-color:rgba(248,112,117,0.77);
+}
+.TableHeader
+{
+	font-size: 20px;
+}
+.TableFont
+{
+	font-family: 'DINWeb-Light', serif;
+}
+#ErrorBox
+{
+	height:70px;
+	width:160px;
+	background-color:rgba(255,179,180,0.87);
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	margin: 0;
+	z-index: 5;
+}
+#ErrorBox p 
+{
+	font-size: 10px;
+	margin-left: 2px;
+}
+#ErrorBox button
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.ErrorColor 
+{
+    position: absolute; 
+    z-index: 2; /* Sit on top */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+	height: 100%;
+	width: 100%;
+}
+
+#ManageUsersTitleCard
+{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 42px;
+	background-color: #f39100;
+	border-bottom: solid 2px black;
+}
+#ManageUsers
+{
+	position: absolute;
+	background-color: #dcdcce;
+	
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -155%);
+	margin: 0;
+	width: 90%;
+	border: solid 2px black;
+	height: 200px;
+}
+#titleCardImg
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 40px;
+	width:40px;
+	background-color: #f39100;
+	border-right: solid 2px black;
+}
+#titleCardText
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 40px;
+	width:130px;
+	background-color:#f39100;
+	position: absolute;
+	top:0px;
+	left:45px;
+}
+#titleCardText h1
+{
+	font-size: 20px;
+	font-family: 'DINWeb-Medium', serif;	
+}
+#ManageUsersInput
+{
+	height: 58px;
+	width: 100%;
+	position: absolute;
+	top:42px;
+}
+#ManageUsersInput h1
+{
+	margin-left: 40px;
+	font-family: 'DINWeb-Medium', serif;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+#ManageUsersInput input
+{
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+	width: 26.15%;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+	
+	font-family: 'DINWeb-Light', serif;
+}
+#ManageUsersInput input:focus 
+{
+    border: 3px solid #555;
+}
+#CreateUserBtn
+{
+	height: 30px;
+	width: 100%;
+	border: none;
+	margin-top:0;
+	background-color: #0078ca;
+	color:white;
+	position: absolute;
+	bottom: -96px;
+}
+#CreateUserBtn:hover
+{
+	background-color:#89CFFF;
+	color:black;
+}
+.marginRight80
+{
+	margin-right: 7%;
+}
+.marginleftNeg
+{
+	margin-left:-3px;
+}
+.selectMenu
+{
+	box-sizing: border-box;
+    border: 3px solid #ccc;
+	width: 26.15%;
+    height:35px;
+	font-family: 'DINWeb-Light', serif;
+}
+.selectBtn
+{
+	box-sizing: border-box;
+    border: 3px solid #ccc;
+    outline: none;
+	width: 100%;
+    padding: 5px 5px;
+	font-family: 'DINWeb-Light', serif;
+}
+.selectDropdown
+{
+	box-sizing: border-box;
+    outline: none;
+	width: 100%;
+    height:80px;
+	font-family: 'DINWeb-Light', serif;
+}
+.dropdownz 
+{
+    display: inline-block;
+	width: 26.15%;
+	margin-right: 7%;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 26.15%;
+	height: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+.dropdownz:hover .dropdown-content {
+    display: block;
+}
+#welcomeMsg
+{
+	font-family: 'DINWeb-Light', serif;
+	color:white;
+}

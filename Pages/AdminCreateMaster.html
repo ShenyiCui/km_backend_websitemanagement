@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create New Admin User</title>
+		<script src="../JS/jquery.js"></script>
+		<script src="../JS/aws-cognito.js"></script>
+		<script src="../JS/Main.js"></script>
+		<link rel="stylesheet" href="../CSS/MainStyles.css">
+	</head>
+	<body id="AdminCreatePage">
+		<center>
+			<br><br><br><br>
+			<div class="NewAdminForm">
+				<br><br><br>
+				<p id="SignUpAdminErrMsg"></p>
+				<h1>Create a New Admin User</h1><br>
+				<input placeholder="Username" id = "Username"><br>
+				<input placeholder="Password" id="Password" type="password"><br>
+				<input placeholder="Confirm Password" id="ConfirmPassword" type="password"><br>
+				<input placeholder="Userpool ID" id="userpID"><br>
+				<input placeholder="App Client ID" id="appCliID"><br>
+				
+				<button id="adminCreateButton" onClick="createAdmin();">Create New Admin</button>
+			</div>
+		</center>
+
+		<div class="Logo">
+			<em>
+				<h1>KraussMaffei</h1>
+				<p>Group</p>
+			</em>
+		</div>
+	</body>
+	
+	<script>
+		function createAdmin()
+		{
+			if($("#userpID").val().length == 0 || $("#appCliID").val().length==0)
+			{
+				document.getElementById("SignUpAdminErrMsg").style.color="red"
+				document.getElementById("SignUpAdminErrMsg").innerHTML="Please Fill Out The AppclientID and UserpoolID Fields"
+			}
+			else if($("#Password").val() != $("#ConfirmPassword").val())
+			{
+				document.getElementById("SignUpAdminErrMsg").style.color="red"
+				document.getElementById("SignUpAdminErrMsg").innerHTML="Passwords do not match"
+			}
+			else
+			{
+				createNewAdminUser($("#Username").val(),$("#Password").val(),"fake@email.com",$("#userpID").val(),$("#appCliID").val())
+			}	
+		}
+	</script>
+</html>

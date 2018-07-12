@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<script src="../JS/jquery.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="../JS/GenerateTable.js"></script>
+		<script src="../JS/aws-cognito.js"></script>
+		<script src="../JS/Main.js"></script>
+		<link rel="stylesheet" href="../CSS/MainStyles.css">
+	</head>
+	
+	<body id="AdminCreatePage">
+		<p id="welcomeMsg"></p>
+		<div id="ManageUsers">
+			<div id="ManageUsersTitleCard">
+				<div id="titleCardImg"><img src="../IMG/Icon_Admin.png"></div>
+				<div id="titleCardText"><h1>Manage Users</h1></div>
+			</div>
+			
+			<div id="ManageUsersInput">
+				<h1>Add a user</h1>
+				<p id="SignUpAdminErrMsg2"></p>
+				<center>
+					<input placeholder="Email" type="email" class="marginRight80" id="emailValue">
+					<input placeholder="First Name" name="firstname" class="marginRight80" id="firstNameValue">
+					<input placeholder="Last Name" name="lastname" id="lastNameValue">
+					<br>
+					<input placeholder="Job Description" class="marginRight80 marginleftNeg" id="jobDescriptionValue">
+					<div class="dropdownz">
+						<button class="selectBtn">Choose Devices...</button>
+						<div class="dropdown-content">
+							<select multiple name="Devices" class="selectDropdown" id="deviceValue">
+							  <option value="volvo">Volvo</option>
+							  <option value="saab">Saab</option>
+							  <option value="fiat">Fiat</option>
+							  <option value="audi">Audi</option>
+							</select>
+						</div>
+					</div>
+					<select name="Role" class="selectMenu" id="roleValue">
+						<option value="" disabled selected>Choose Role</option>
+						<option value = "maintenance">Maintenance</option>
+					</select>
+				</center>
+				<br>
+				<button id="CreateUserBtn" onClick="CreateUser();">Create User</button>
+			</div>
+		</div>
+		
+		<div class="tbl_user_data" id="usertable">
+		</div>
+		
+		<div id="errorModule">
+			<div id="ErrorBox">
+			<p>Error:<br>Datatable is not being saved<br>Please Check Network Connection</p>
+			<button onClick="location.reload()">Reload</button>
+			</div>
+			<div class="ErrorColor"></div>
+		</div>
+		
+	</body>
+	
+	<script>
+		document.getElementById("welcomeMsg").innerHTML = "Welcome: " + whatUserName(localStorage.getItem("JwtToken"));
+		function CreateUser()
+		{
+			var Fname = $("#firstNameValue").val();
+			var Lname = $("#lastNameValue").val();
+			var initals = Fname.charAt(0).toUpperCase() + Lname.charAt(0).toLowerCase()
+			window.clearTimeout(Timoutevent);
+			getAppCliIDAndUserPoolID()
+			window.setTimeout(go,1000)
+			
+			function go()
+			{
+				CreateNewUserDB(nonAdminIds[0], nonAdminIds[1], $("#emailValue").val(), Fname+" "+Lname, initals +"12345!",$("#jobDescriptionValue").val() ,$("#roleValue").val(), $("#deviceValue").val())
+			}
+		}
+	</script>
+</html>

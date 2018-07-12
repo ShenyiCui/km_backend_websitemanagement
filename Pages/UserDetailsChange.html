@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Change User Details</title>
+		<script src="../JS/jquery.js"></script>
+		<script src="../JS/aws-cognito.js"></script>
+		<script src="../JS/Main.js"></script>
+		<link rel="stylesheet" href="../CSS/MainStyles.css">
+	</head>
+
+	<body id="AdminCreatePage">
+		<div class="Logo">
+			<em>
+				<h1>KraussMaffei</h1>
+				<p>Group</p>
+			</em>
+		</div>
+
+		<center>
+			<br><br><br><br>
+			<div class="NewAdminForm">
+				<br>
+				<p id="SignUpAdminErrMsg"></p>
+				<h1>Welcome!</h1><br>
+				<h1 class="smallh1">Please confirm your details</h1><br>
+				<div class="UserUpdateSlides">
+					<input placeholder="New Email" id="newemail" type="email"><br>
+					<input placeholder="Confirm New Email" id="confirmNewEmail" type="email"><br>
+					
+				</div>
+				<div class="UserUpdateSlides">
+					<img src="../IMG/Back.png" class="back" onClick="plusDivs(-1);">
+					<input placeholder="Email Verification Code" id= "EVerificationCode">
+					<h1 id="verified" class="smallh1"></h1>
+					<button id="ResendCode" onClick="getNewCode()">Resend Verification Code</button>
+				</div>
+				<div class="UserUpdateSlides">
+					<img src="../IMG/Back.png" class="back" onClick="plusDivs(-1);" id="PassBack">
+					<input placeholder="Old Password" id="OPassword" type="password"><br>
+					<input placeholder="New Password" id="NPassword" type="password"><br>
+					<input placeholder="Confirm New Password" id="ConfirmNPasswords" type="password"><br>
+				</div>
+				<button id="adminCreateButton" onClick="Continue();">Continue</button>
+			</div>
+		</center>
+
+	</body>
+	
+	<script>
+		showDivs(slideIndex);
+		SpecificAttribuit("email_verified")
+		setTimeout(showVerifiedDiv, 500)
+		function showVerifiedDiv()
+		{
+			if(verifiedEmailz=="true")
+			{
+				plusDivs(2);
+				$("#PassBack").removeClass("show")
+				$("#PassBack").addClass("hide")
+			}
+		}
+	</script>
+	
+
+</html>

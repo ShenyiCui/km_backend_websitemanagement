@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="41px" viewBox="0 0 48 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Pfeil</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="29.7841705 22.3535455 0 22.3535455 0 0.000136363636 29.7841705 0.000136363636"></polygon>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3_Startseite" transform="translate(-861.000000, -1380.000000)">
+            <g id="Reihe-3" transform="translate(50.000000, 1239.000000)">
+                <g id="Last-Messages" filter="url(#filter-1)" transform="translate(0.000000, 36.000000)">
+                    <g id="Icon_Pfeil" transform="translate(820.000000, 112.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M29.3847955,10.2126818 L19.5713864,0.399272727 C19.0388864,-0.133227273 18.1763864,-0.133227273 17.6432045,0.399272727 C17.1107045,0.932454545 17.1107045,1.79495455 17.6432045,2.32813636 L25.1288864,9.81313636 L1.36343182,9.81313636 C0.610704545,9.81313636 -0.000204545455,10.4240455 -0.000204545455,11.1767727 C-0.000204545455,11.9301818 0.610704545,12.5404091 1.36343182,12.5404091 L25.1288864,12.5404091 L17.6432045,20.0260909 C17.1107045,20.5585909 17.1107045,21.4210909 17.6432045,21.9542727 C17.9097955,22.2201818 18.2588864,22.3538182 18.6072955,22.3538182 C18.9563864,22.3538182 19.3054773,22.2201818 19.5713864,21.9542727 L29.3847955,12.1408636 C29.9172955,11.6083636 29.9172955,10.7451818 29.3847955,10.2126818" id="Fill-1" fill="#00325A" mask="url(#mask-3)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

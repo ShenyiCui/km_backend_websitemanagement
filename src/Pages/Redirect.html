@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Redirecting...</title>
+		<script src="../JS/jquery.js"></script>
+		<script src="../JS/aws-cognito.js"></script>
+		<script src="../JS/Main.js"></script>
+	</head>
+	<body>
+		<p id="verified"></p>
+	</body>
+	<script>
+		SpecificAttribuit("email_verified")
+		continues = false;
+		waitForElement()
+		function waitForElement()
+		{
+			if(continues == true)
+			{
+				if(verifiedEmailz == "true")
+				{
+					openInCurrentTab("home.html")
+				}
+				else if(verifiedEmailz =="false")
+				{
+					openInCurrentTab("UserDetailsChange.html")
+				}
+			}
+			else{
+				setTimeout(waitForElement, 250);
+			}
+		}
+	</script>
+</html>

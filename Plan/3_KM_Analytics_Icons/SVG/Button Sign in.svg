@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="160px" height="38px" viewBox="0 0 160 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Button Sign in</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2_Login" transform="translate(-640.000000, -673.000000)">
+            <g id="Button-Sign-in" transform="translate(640.000000, 673.000000)">
+                <path d="M1.13686838e-13,0 L160,0 L160,38 L1.13686838e-13,38 L1.13686838e-13,0 Z" id="Combined-Shape" fill="#0078CA"></path>
+                <g id="Group" transform="translate(18.000000, 10.000000)">
+                    <text id="Sign-in-to-Netstal" font-family="DIN-Regular" font-size="14" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="17" y="14">Sign in to Netstal</tspan>
+                    </text>
+                    <image id="systemloesung_konfiguration_pfeilrechts" x="0" y="3" width="7.44" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAyCAYAAACknADRAAAABGdBTUEAA1teXP8meAAAAkBJREFUWAnFWMtOwzAQ7IMTH1ZAFAECxLkIqoIAAQIEiMdvABcqQFw58Qf8Es/ShhlEIsuNnd3EaVeaZmOvd8aumzpbjaKoYlkd9zfAK9AFyjOSG6jD7wK0H6AFmP1BfTMZie8B0/q4WQPMuGB+nIjEDyar4Q/glyKA5CR+NMjSXApYB2KxQa5M4pqxLYIC2iEF1LCVX4C+YEtXEXMNtAWxspD/maziyt0tMa5AByi89GaCFSTsSdgRQwFbgDle7dsDRirAJuf9MvANSIwrsA2k5clscwUsIeGXhB0xFLALuHI5250dSFa6AB85+xYBzQrsaVYgi5z98woBCI32AUneiigIybQCDiQCpOSMmwOkXwFCo0PAm9/bmTJ4Fm0aAUcpORLOxPEFWX1aAcfW+IQzcVwBjvYZtH8CUjtB4BDXUENakKNtGu0aAad2niLkHEsBH4DUzhCYcCaO2aj0pxD/DkjtHIF/vCHImaMBaARcUECVH4GsgTzPwKQw3xWPUaFsoExUC7nsb1hFqV0iUPxs94kc24bLTVx05oV+40XIx/Z4DUKcZ+bB/tG05E0M0PyXBztMBD/FSGdeyvlNQr6gXOpgR+dSz+y+mZf+tuIiJ7HmRXGHifLAHjSyN1R75iN9NzfJSawpi2zmWWZ7DJd9LPUYCpnA0acJsN6aZTzsdYDbrEBxPxSwCPgE+IzVhw3A3qCF7uPBviokiYNXHzmRmJxXChhL4TcWYQooteLMmXPDmcYyaAvoASz23wGl2S/JtdRKuzBbSgAAAABJRU5ErkJggg=="></image>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
